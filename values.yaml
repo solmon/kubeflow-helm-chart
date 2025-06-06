@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kubeflow-config
+data:
+  # Default configuration values for Kubeflow services
+  replicas: "1"
+  image: "kubeflow/kubeflow:latest"
+  serviceType: "ClusterIP"
+  ingressHost: "kubeflow.example.com"
+  namespace: "kubeflow"
+  # Add any other configuration values as needed
+  # Example:
+  # environment: "production"
